@@ -6,14 +6,13 @@ import HomeScreen from './components/HomeScreen';
 import QuizScreen from './components/QuizScreen.jsx';
 import ScoreScreen from './components/ScoreScreen.jsx';
 import SelectCategoory from './components/SelectCategoory.jsx';
-import {DEVQuestions,DSAQuestions,MLQuestions,AptitudeQuestions,DBMSQuestions,OOPQuestions} from "./constants/Data"
+import {DEVQuestions} from "./constants/Data"
 
 
 const App = () => {
   const [questions,setquestions]=useState(DEVQuestions);
   const [step, setStep] = useState(0);  // 0: Home, 1: Quiz, 2: Result
   const [score, setScore] = useState(0);
-  const [answers, setAnswers] = useState([]);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [incorrectAnswers, setIncorrectAnswers] = useState(0);
   
@@ -25,7 +24,6 @@ const App = () => {
     setScore(0);
     setCorrectAnswers(0);
     setIncorrectAnswers(0);
-    setAnswers([]);
   };
 
   const finishQuiz = (finalScore) => {

@@ -6,7 +6,6 @@ const QuizScreen = ({ finishQuiz, questions, setIncorrectAnswers, setCorrectAnsw
   const [selectedOption, setSelectedOption] = useState(null);
   const [score, setScore] = useState(0);
   const [isQuizFinished, setIsQuizFinished] = useState(false);
-  const [progress,setprogress]=useState(0);
 
   const handleOptionChange = (event) => {
     setSelectedOption(Number(event.target.value));
