@@ -2,26 +2,29 @@ import React from 'react';
 
 const HomeScreen = ({ startQuiz }) => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-transparent"> {/* Background styling for the whole screen */}
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-xs h-[450px] flex flex-col justify-between text-center"> {/* Card styling */}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-300 via-blue-300 to-green-300"> {/* Gradient background */}
+      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-sm h-[480px] flex flex-col justify-between text-center border border-gray-200"> {/* Card with border and shadow */}
         
-        {/* Row with image  & adjacent text */}
-        <div className="flex items-center justify-center mb-6">
+        {/* Logo & app name */}
+        <div className="flex items-center justify-center mb-6 space-x-3">
           <img 
             src={require('./logo.jpg')} 
             alt="Upraised" 
-            className="w-6 h-6 object-cover mr-4" 
+            className="w-10 h-10 object-cover rounded-full shadow-md" 
           />
-          <h2 className="text-xl font-semibold">Upraised</h2> 
+          <h2 className="text-2xl font-bold text-gray-800 tracking-wide">Upraised</h2>
         </div>
 
-        <h1 className="text-3xl font-bold mb-4">Ready to Start</h1> 
-        <p className="text-lg text-gray-500 mb-4 mt-auto">QuizBuzz</p> 
+        {/*  adjusted spacing */}
+        <div className="flex flex-col space-y-4"> {/* Vertical space between title, subtitle */}
+          <h1 className="text-4xl font-extrabold text-gray-900">Are You Ready?</h1> 
+          <p className="text-lg text-gray-500">QuizBuzz</p>
+        </div>
 
-       
-        <div className="mt-auto"> {/* This makes the button container push to the bottom */}
+        
+        <div className="mt-8"> 
           <button 
-            className="bg-blue-500 text-white text-lg py-3 px-6 rounded-lg hover:bg-blue-600 transition-all duration-300"
+            className="bg-blue-500 text-white text-lg py-3 px-8 rounded-full hover:bg-blue-600 hover:shadow-2xl hover:-translate-y-1 transform transition-all duration-300 ease-in-out"
             onClick={startQuiz}
           >
             Start Quiz

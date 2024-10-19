@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 body {
-   /*@apply bg-gray-500;*/  
-  background-image: url('./bg1-img.jpg');
+   /*@apply bg-gray-500;  */
+
+  /*background-image: url('./bg1-img.jpg');*/
+  @apply bg-green-100;
   
+
 
 }

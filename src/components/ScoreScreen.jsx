@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const ScoreScreen = ({ score, totalQuestions, correctAnswers, incorrectAnswers, playAgain }) => {

@@ -32,8 +32,9 @@ const SelectCategory = ({ questions, setquestions, home }) => {
   }, [questions]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-transparent"> 
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-xs h-[450px] flex flex-col justify-between"> {/* Match HomeScreen styling */}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-300 via-blue-300 to-green-300
+"> 
+      <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-xs h-[450px] flex flex-col justify-between"> {/* Match HomeScreen styling */}
         <h2 className="text-2xl font-bold mb-4 text-center">Select a Quiz</h2> {/* Heading of card  */}
 
         <select 

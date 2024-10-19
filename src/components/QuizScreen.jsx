@@ -38,7 +38,8 @@ const QuizScreen = ({ finishQuiz, questions, setIncorrectAnswers, setCorrectAnsw
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-transparent">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-300 via-blue-300 to-green-300
+">
     
       <div className="bg-white relative  rounded-lg shadow-lg w-full max-w-sm text-center h-[500px] flex flex-col justify-center">
       <div
